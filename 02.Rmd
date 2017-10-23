@@ -1,25 +1,33 @@
-# My second cool idea {#slug-two}
+# Jury Selector Assistant (JUSAS) {#Selects-the-jury}
 
 #### Keywords
 
-yaba, daba, do
+crime, jury, bias, innocent, exoneration, just, verdict
 
-## A beginning.
+## The Problem.
 
-Nulla  sint  art party ex, mlkshk disrupt selvage 90's.  Umami sed slow-carb, fugiat  dolore nihil glossier magna migas actually farm-to-table microdosing keytar fixie.  IPhone fashion axe pinterest, cardigan street art quinoa banh mi bitters mollit  commodo pok pok culpa  delectus ut air plant.  Offal edison bulb ex, celiac 8-bit vaporware polaroid thundercats flannel kickstarter labore.  Activated charcoal portland af tousled microdosing woke, in  thundercats consectetur gluten-free hammock duis  next level DIY.  Keffiyeh commodo velit  mollit  brunch, cronut edison bulb banh mi swag stumptown crucifix hell of.  Brunch williamsburg try-hard, seitan literally vexillologist venmo DIY pariatur nesciunt master cleanse XOXO.
+What if you got charged with a crime you did not commit? Do you feel comfortable that your justice system would come to the truth? Does it scare you that the reality is no justice system is perfect, and there is a chance you could be wrongly convicted? In the United States, since 1989, there are have 2,109 exonerations making up more than 18,250 years of lost life^1^. This does not include innocent people who are still incarcerated. It is understandable that our justice system is not perfect, because it relies on humans who are never perfect. Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. The U.S. government needs to do more to minimize the biases of juries that have been tasked with deciding the fate of accused citizens.
 
-## A middle.
+## The Solution.
 
-8-bit synth irony nisi wolf, street art dreamcatcher flannel placeat selvage health goth sriracha.  Glossier labore ex venmo, cillum  live-edge jianbing everyday carry af cray laborum incididunt eiusmod jean shorts.  Normcore slow-carb lyft letterpress, beard tilde art party.  Poke marfa incididunt tempor duis.  Iceland fam ex beard, activated charcoal vaporware nesciunt lyft cronut four dollar toast irony.  Officia  stumptown voluptate  unicorn culpa  bushwick.  Mollit  vero af marfa deserunt  flexitarian.
+I propose creating a jury selector assistant tool (JUSAS) that will choose juries that are more likely to decide correct verdicts, compared to juries that are chosen by humans alone. This tool will use data science to predict and minimize juror biases, using information about each person, including demographic data (age, race, sex, income, political party, region, etc.) and social media data (likes, posts, follows, groups, networks, etc.). Once a pool of potential jurors is selected, a clerk will enter the variables of the case (i.e. white male, robbery, convenience store, etc.) and run the tool which will select the overall least biased jury. 
 
+JUSAS will start by eliminating any potential jurors that show a risk of strong bias towards the given case. Some examples may include:
 
-```{r experimental,echo=F,results='asis',eval=F}
-data.table::fread('https://raw.githubusercontent.com/UCB-MIDS/experiments-causality/master/data/GerberGreenBook_Chapter3_Donations.csv?token=ABNmuX-Q14rzQ4teItDenc9L5Wo2flncks5ZL5qEwA%3D%3D') %>% stargazer::stargazer(type = 'html',title = 'Something from W241 Experiments and Causality')
-```
+* A case where a car was stolen, and the juror has posted an angry post on social media in the past indicating that their car was stolen.
+* A case where a woman is suing a company over equal pay, and the juror is a member of many women’s rights activist groups.
+* A case where a church was robbed, and the juror is an active member of the same church.
+* Apple is in a lawsuit for a faulty product, and the juror has expressed their dislike of Apple products on social media.
 
+Everyone in the remaining pool of potential jurors will also have biases, but they will potentially be weaker than the jurors that have been excluded in the previous step. The tool will select the final jury from this pool, while attempting to balance and minimize the remaining biases using the data it has collected on each person.
 
-Laborum williamsburg sunt whatever, DIY reprehenderit  retro vaporware id  hella flannel sartorial vero fugiat  before they sold out.  Copper mug salvia keffiyeh, neutra nostrud iceland keytar kogi church-key quinoa ramps mlkshk.  Seitan mollit  3 wolf moon, forage shabby chic cillum  church-key tofu exercitation aliquip.  Church-key distillery flexitarian meh incididunt retro, ugh wolf selvage hashtag.  Bicycle rights 90's officia  vape.  Listicle post-ironic vape ex.  Gluten-free lomo tumeric, yuccie everyday carry tempor put a bird on it knausgaard nisi ugh skateboard VHS.
+## The Result.
 
-## An end.
+Jurors are asked to assume the null hypothesis that a person is innocent until proven guilty. JUSAS will reduce type 1 error, which is convicting an innocent person, as well as type 2 error, which is letting a guilty person go. Type 1 error is the more important of the two errors, and could be measured over time using exoneration rates. Type 2 error is more difficult to measure, but could potentially be inferred from rates of people who have been found not guilty and proceeded to eventually commit a similar crime.
 
-Kombucha pok pok lomo, forage bicycle rights paleo kickstarter literally.  Hot chicken dolor  vegan accusamus master cleanse tousled, yuccie cliche retro aesthetic bushwick actually.  Ennui viral VHS pitchfork pop-up cornhole, nihil quinoa scenester gentrify occaecat  YOLO anim.  Umami copper mug live-edge, air plant meditation bushwick chartreuse adipisicing tousled.  Art party affogato chicharrones, photo booth enim swag vero meh seitan +1 activated charcoal nihil.  Etsy gluten-free authentic mixtape.  Shabby chic duis  90's pop-up pinterest, lumbersexual mollit  cillum.
+JUSAS will receive a lot of scrutiny. The main issue may be that the tool itself will also have biases, because the algorithms will be developed by humans who could transfer some of their own biases. The algorithms also have the potential to develop their own biases as they continue to learn. However, I believe the tool will do a better job at selecting jurors, because it will be developed with all of this in mind. In the heat of the moment, judges, lawyers, and jurors may not be aware of their own biases. Lawyers even try to use biases to their advantage, often attempting to select jurors that will favor their side of the case. JUSAS will control for these factors in a way that will lead to less biased juries and more just verdicts.
+
+## Citations
+
+^1^ https://www.law.umich.edu/special/exoneration/Pages/Exoneration-by-Year.aspx
+
