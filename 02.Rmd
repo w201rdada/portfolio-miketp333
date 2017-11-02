@@ -1,14 +1,14 @@
-# Jury Selector Assistant (JUSAS) {#Selects-the-jury}
+# Jury Selector Assistant (JUSAS) {#automated-jury-selection}
 
 #### Keywords
 
 crime, jury, bias, innocent, exoneration, just, verdict
 
-## The Problem.
+## Wrongly Convicted
 
 What if you got charged with a crime you did not commit? Do you feel comfortable that your justice system would come to the truth? Does it scare you that the reality is no justice system is perfect, and there is a chance you could be wrongly convicted? In the United States, since 1989, there have been 2,109 exonerations making up more than 18,250 years of lost life^1^. This does not include innocent people who are still incarcerated. It is understandable that our justice system is not perfect, because it relies on humans who are never perfect. Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. The U.S. government needs to do more to minimize the biases of juries that have been tasked with deciding the fate of accused citizens.
 
-## The Solution.
+## Minimize Jury Biases
 
 I propose creating a jury selector assistant tool (JUSAS) that will choose juries that are more likely to decide correct verdicts, compared to juries that are chosen by humans alone. This tool will use data science to predict and minimize juror biases, using information about each person, including demographic data (age, race, sex, income, political party, region, etc.) and social media data (likes, posts, follows, groups, networks, etc.). Once a pool of potential jurors is selected, a clerk will enter the variables of the case (i.e. white male, robbery, convenience store, etc.) and run the tool which will select the overall least biased jury. 
 
@@ -21,7 +21,7 @@ JUSAS will start by eliminating any potential jurors that show a risk of strong 
 
 Everyone in the remaining pool of potential jurors will also have biases, but they will potentially be weaker than the jurors that have been excluded in the previous step. The tool will select the final jury from this pool, while attempting to balance and minimize the remaining biases using the data it has collected on each person.
 
-## The Result.
+## Justice for All
 
 Jurors are asked to assume the null hypothesis that a person is innocent until proven guilty. JUSAS will reduce type 1 error, which is convicting an innocent person, as well as type 2 error, which is letting a guilty person go. Type 1 error is the more important of the two errors, and could be measured over time using exoneration rates. Type 2 error is more difficult to measure, but could potentially be inferred from rates of people who have been found not guilty and proceeded to eventually commit a similar crime.
 
