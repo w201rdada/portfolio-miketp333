@@ -1,12 +1,10 @@
 ---
 title: "W201 Portfolio"
 author: "Michael Powers"
-date: "MIDS Summer 2017"
+date: "MIDS Fall 2017"
 site: bookdown::bookdown_site
 documentclass: book
 ---
-
-# Welcome!
 
 ### Abstract of Idea # 1: Suspicious Order Monitoring (MySOM)
 
@@ -15,7 +13,3 @@ The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool calle
 ### Abstract of Idea # 2: Jury Selector Assistant (JUSAS)
 
 Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. Sometimes these verdicts are not correct, and people are wrongly convicted. JUSAS is a tool that collects demographic and social media data for all potential jurors, and then uses this data to select the least biased jury towards a given case. This will result in more just verdicts. Specifically, less innocent people will be convicted, and less guilty people will be set free.
-  
-## About the author
-
-Michael Powers
