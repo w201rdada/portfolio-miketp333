@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="comply-with-som.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="automated-jury-selection.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -104,20 +104,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">W201 Portfolio</h1>
-<h4 class="author"><em>Michael Powers</em></h4>
-<h4 class="date"><em>MIDS Fall 2017</em></h4>
+<div id="comply-with-som" class="section level1">
+<h1>“Suspicious Order Monitoring” Compliance Application (MySOM)</h1>
+<div id="new-dea-enforcement" class="section level2">
+<h2>New DEA Enforcement</h2>
+<p>The opioid crisis has become a top public health priority in the US. It has resulted in many lost lives, increased crime and poverty, as well as depletion of government resources including: police, hospitals, rehabilitation centers and tax dollars. The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool called the Suspicious Order Monitoring (SOM) requirement, as a means to address the opioid crisis. SOM requires that any DEA-registered entity that distributes opioids, or other controlled substances, must design and operate a system that discloses suspicious orders of controlled substances. The DEA has not provided exact guidelines on how to identify suspicious orders, so it falls on the distributors to create a model and process that flags and reports suspicious transactions. This presents a serious problem for the distributors, because revenue is sacrificed when legitimate orders are blocked, and risks are escalated when orders from pharmacies involved in illegal activity are fulfilled. If found guilty of fulfilling illegitimate orders then distributors can be hit with large fines, or even worse, lose their license to distribute controlled substances. I would like to help pharmaceutical drug distributors lower these risks, while minimizing the opportunity cost of lost revenue.</p>
 </div>
-<div id="welcome" class="section level1">
-<h1>Welcome!</h1>
-<div id="abstract-of-idea-1-suspicious-order-monitoring-mysom" class="section level3">
-<h3>Abstract of Idea # 1: Suspicious Order Monitoring (MySOM)</h3>
-<p>The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool called the Suspicious Order Monitoring (SOM) requirement, as a means to address the opioid crisis. SOM requires that any DEA-registered entity that distributes opioids, or other controlled substances, must design and operate a system that discloses suspicious orders of controlled substances. MySOM is an application used by distributors of controlled substances that will flag and report suspicious orders to the DEA. It relies on order data stored by the distributors, as well as third party data related to prevalence of drug use and location of overdoses. Distributors that use MySOM maximize their revenue by fulfilling almost all legitimate orders they receive and are capable of fulfilling. They also minimize their risk of being investigated by the DEA for completing fraudulent orders, which can be extremely costly.</p>
+<div id="comply-with-mysom" class="section level2">
+<h2>Comply with MySOM</h2>
+<p>In order to achieve this goal, I plan on building an application, called MySOM, that will be used by the distributors. MySOM will implement an algorithm that will classify orders as one of three possibilities: “legitimate”, “suspicious”, or “undetermined”. “Legitimate” orders will be executed. “Suspicious” orders will be automatically sent to the DEA. “Undetermined” orders will be manually reviewed by a compliance employee at the organization. The algorithm will rely on the distributor’s data, as well as publically available data related to prevalence of drug use and location of overdoses. Suspicious orders will be identified using metrics that calculate if an order is of unusual size, unusual frequency, in an area with high rates of abuse and overdoses, or deviates from normal patterns.</p>
+<p>MySOM will have an interface that will allow the user to connect to a database and map data fields to each variable required for the algorithm. Distributors will typically have a team of database administrators that I will be able to assist with the mapping process. The application will also have an interface from which manual review can be conducted, allowing the reviewer to manually flag “undetermined” orders as “legitimate” or “suspicious”. This application can be set to run as often as the user wishes, and will return the calculated classifier for each order to the database from which it came from.</p>
 </div>
-<div id="abstract-of-idea-2-jury-selector-assistant-jusas" class="section level3">
-<h3>Abstract of Idea # 2: Jury Selector Assistant (JUSAS)</h3>
-<p>Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. Sometimes these verdicts are not correct, and people are wrongly convicted. JUSAS is a tool that collects demographic and social media data for all potential jurors, and then uses this data to select the least biased jury towards a given case. This will result in more just verdicts. Specifically, less innocent people will be convicted, and less guilty people will be set free.</p>
+<div id="achieve-operational-efficiency" class="section level2">
+<h2>Achieve Operational Efficiency</h2>
+<p>Once MySOM is rolled out to entities that distribute controlled substances, these distributors will be maximizing their revenue by fulfilling almost all legitimate orders they receive and are capable of fulfilling. In addition, I anticipate that no distributors using my product will be investigated by the DEA for completing fraudulent orders, if they follow the recommendations of the algorithm. I suspect the algorithm will not always be perfect, but believe the DEA will be forgiving of distributors that only make a few small errors. I would like to establish a process where a portion of my customers send us their data, enabling us to continuously improve the predicative algorithm.</p>
+<p>I also proposed a manual review element to the process that accompanies MySOM. Manual review can be prone to mistakes, and it is important that these distributors implement a standardized review process, in order to obtain consistent results. In the end, my application will allow distributors to achieve operational efficiency while they comply with the SOM requirements enforced by the DEA. If the SOM requirements effectively address the opioid crisis that impacts all of us in one way or another, then I will be proud that my application will be a part of that.</p>
 
 </div>
 </div>
@@ -126,8 +127,8 @@
           </div>
         </div>
       </div>
-
-<a href="comply-with-som.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="automated-jury-selection.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -156,7 +157,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/index.Rmd",
+"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/01.Rmd",
 "text": "Edit"
 },
 "download": null,
