@@ -1,17 +1,17 @@
 # “Suspicious Order Monitoring” Compliance Application (MySOM) {#comply-with-som}
 
-## The Problem.
+## New DEA Enforcement
 
 The opioid crisis has become a top public health priority in the US. It has resulted in many lost lives, increased crime and poverty, as well as depletion of government resources including: police, hospitals, rehabilitation centers and tax dollars. The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool called the Suspicious Order Monitoring (SOM) requirement, as a means to address the opioid crisis. SOM requires that any DEA-registered entity that distributes opioids, or other controlled substances, must design and operate a system that discloses suspicious orders of controlled substances.
 The DEA has not provided exact guidelines on how to identify suspicious orders, so it falls on the distributors to create a model and process that flags and reports suspicious transactions. This presents a serious problem for the distributors, because revenue is sacrificed when legitimate orders are blocked, and risks are escalated when orders from pharmacies involved in illegal activity are fulfilled.  If found guilty of fulfilling illegitimate orders then distributors can be hit with large fines, or even worse, lose their license to distribute controlled substances. I would like to help pharmaceutical drug distributors lower these risks, while minimizing the opportunity cost of lost revenue.
 
-## The Solution.
+## Comply with MySOM
 
 In order to achieve this goal, I plan on building an application, called MySOM, that will be used by the distributors. MySOM will implement an algorithm that will classify orders as one of three possibilities: “legitimate”, “suspicious”, or “undetermined”. “Legitimate” orders will be executed. “Suspicious” orders will be automatically sent to the DEA. “Undetermined” orders will be manually reviewed by a compliance employee at the organization. The algorithm will rely on the distributor’s data, as well as publically available data related to prevalence of drug use and location of overdoses. Suspicious orders will be identified using metrics that calculate if an order is of unusual size, unusual frequency, in an area with high rates of abuse and overdoses, or deviates from normal patterns. 
 
 MySOM will have an interface that will allow the user to connect to a database and map data fields to each variable required for the algorithm. Distributors will typically have a team of database administrators that I will be able to assist with the mapping process. The application will also have an interface from which manual review can be conducted, allowing the reviewer to manually flag “undetermined” orders as “legitimate” or “suspicious”. This application can be set to run as often as the user wishes, and will return the calculated classifier for each order to the database from which it came from.
 
-## The Result.
+## Achieve Operational Efficiency
 
 Once MySOM is rolled out to entities that distribute controlled substances, these distributors will be maximizing their revenue by fulfilling almost all legitimate orders they receive and are capable of fulfilling. In addition, I anticipate that no distributors using my product will be investigated by the DEA for completing fraudulent orders, if they follow the recommendations of the algorithm. I suspect the algorithm will not always be perfect, but believe the DEA will be forgiving of distributors that only make a few small errors. I would like to establish a process where a portion of my customers send us their data, enabling us to continuously improve the predicative algorithm.
 
