@@ -9,7 +9,7 @@ bookdown::gitbook:
       collapse: section
       scroll_highlight: yes
       before: |
-        <li><a href="./">Oski Bear</a></li>
+        <li><a href="./">Mike Powers</a></li>
       after: |
         <li><a href="https://github.com/miketp333" target="blank">GitHub</a></li>
         <li><a href="https://www.ischool.berkeley.edu/people/michael-powers" target="blank">UC Berkeley</a></li>
