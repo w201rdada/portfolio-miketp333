@@ -6,7 +6,7 @@ site: bookdown::bookdown_site
 documentclass: book
 ---
 
-# Welcome!
+# Welcome! {-}
 
 ### Abstract of Idea # 1: Suspicious Order Monitoring (MySOM)
 
