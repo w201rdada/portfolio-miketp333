@@ -8,10 +8,10 @@ documentclass: book
 
 # Welcome! {-}
 
-### Abstract of Idea # 1: Suspicious Order Monitoring (MySOM)
-
-The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool called the Suspicious Order Monitoring (SOM) requirement, as a means to address the opioid crisis. SOM requires that any DEA-registered entity that distributes opioids, or other controlled substances, must design and operate a system that discloses suspicious orders of controlled substances. MySOM is an application used by distributors of controlled substances that will flag and report suspicious orders to the DEA. It relies on order data stored by the distributors, as well as third party data related to prevalence of drug use and location of overdoses. Distributors that use MySOM maximize their revenue by fulfilling almost all legitimate orders they receive and are capable of fulfilling. They also minimize their risk of being investigated by the DEA for completing fraudulent orders, which can be extremely costly.
-
-### Abstract of Idea # 2: Jury Selector Assistant (JUSAS)
+### Abstract of Idea # 1: Jury Selector Assistant (JUSAS)
 
 Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. Sometimes these verdicts are not correct, and people are wrongly convicted. JUSAS is a tool that collects demographic and social media data for all potential jurors, and then uses this data to select the least biased jury towards a given case. This will result in more just verdicts. Specifically, less innocent people will be convicted, and less guilty people will be set free.
+
+### Abstract of Idea # 2: Suspicious Order Monitoring (MySOM)
+
+The U.S. Drug Enforcement Agency (DEA) has implemented an enforcement tool called the Suspicious Order Monitoring (SOM) requirement, as a means to address the opioid crisis. SOM requires that any DEA-registered entity that distributes opioids, or other controlled substances, must design and operate a system that discloses suspicious orders of controlled substances. MySOM is an application used by distributors of controlled substances that will flag and report suspicious orders to the DEA. It relies on order data stored by the distributors, as well as third party data related to prevalence of drug use and location of overdoses. Distributors that use MySOM maximize their revenue by fulfilling almost all legitimate orders they receive and are capable of fulfilling. They also minimize their risk of being investigated by the DEA for completing fraudulent orders, which can be extremely costly.
