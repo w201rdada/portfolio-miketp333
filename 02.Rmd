@@ -6,26 +6,32 @@ crime, jury, bias, innocent, exoneration, just, verdict
 
 ## Wrongly Convicted
 
-What if you got charged with a crime you did not commit? Do you feel comfortable that your justice system would come to the truth? Does it scare you that the reality is no justice system is perfect, and there is a chance you could be wrongly convicted? In the United States, since 1989, there have been 2,109 exonerations making up more than 18,250 years of lost life^1^. This does not include innocent people who are still incarcerated. It is understandable that our justice system is not perfect, because it relies on humans who are never perfect. Humans are filled with biases, yet we call on them to serve in jury trials, and expect them to come to unbiased verdicts. The U.S. government needs to do more to minimize the biases of juries that have been tasked with deciding the fate of accused citizens.
+What if you got charged with a crime you did not commit? Do you feel comfortable that your justice system would come to the truth? Does it scare you that the reality is no justice system is perfect and there is a chance you could be wrongly convicted? In the United States, there have been 2,109 exonerations since 1989, totaling more than 18,250 years of lost life<sup>1</sup>. This does not include innocent people who remain incarcerated.
+It is understandable that our justice system is not perfect, because it relies on humans who are never perfect. Humans are filled with biases, yet we call on them to serve in jury trials and expect these trials to come to unbiased verdicts.
+Using data science, the U.S. government can minimize the biases of juries that have been tasked with deciding the fate of accused citizens and reduce the rate of wrongful conviction. 
 
 ## Minimize Jury Biases
 
-I propose creating a jury selector assistant tool (JUSAS) that will choose juries that are more likely to decide correct verdicts, compared to juries that are chosen by humans alone. This tool will use data science to predict and minimize juror biases, using information about each person, including demographic data (age, race, sex, income, political party, region, etc.) and social media data (likes, posts, follows, groups, networks, etc.). Once a pool of potential jurors is selected, a clerk will enter the variables of the case (i.e. white male, robbery, convenience store, etc.) and run the tool which will select the overall least biased jury. 
+I propose creating a jury selector assistant tool (JUSAS) that will choose juries that are more likely to decide correct verdicts, compared to juries that are chosen by humans alone. This tool will use data science to predict juror biases using information about each person, including demographic data (age, race, sex, income, political party, region, etc.) and social media activity (likes, posts, follows, groups, networks, etc.). Once a pool of potential jurors is selected, a clerk will enter the variables of the case (i.e. white male, robbery, convenience store) and run the tool to select the overall least biased jury from those randomly selected for duty. 
 
 JUSAS will start by eliminating any potential jurors that show a risk of strong bias towards the given case. Some examples may include:
 
-* A case where a car was stolen, and the juror has posted an angry post on social media in the past indicating that their car was stolen.
-* A case where a woman is suing a company over equal pay, and the juror is a member of many women’s rights activist groups.
-* A case where a church was robbed, and the juror is an active member of the same church.
-* Apple is in a lawsuit for a faulty product, and the juror has expressed their dislike of Apple products on social media.
+* A case where a car was stolen and the juror has posted an angry post on social media in the past indicating that their car was stolen.
+* A case where a woman is suing a company over equal pay and the juror is a member of many women’s rights activist groups.
+* A case where a church was robbed and the juror is an active member of the same church.
+* Apple is in a lawsuit for a faulty product and the juror has expressed their dislike of Apple products on social media.
 
-Everyone in the remaining pool of potential jurors will also have biases, but they will potentially be weaker than the jurors that have been excluded in the previous step. The tool will select the final jury from this pool, while attempting to balance and minimize the remaining biases using the data it has collected on each person.
+Everyone in the remaining pool of potential jurors will also have biases, but these will be weaker than the jurors that have been excluded in the previous step. The tool will select the final jury from this pool while attempting to balance and minimize the remaining biases using the data it has collected on each person.
 
 ## Justice for All
 
-Jurors are asked to assume the null hypothesis that a person is innocent until proven guilty. JUSAS will reduce type 1 error, which is convicting an innocent person, as well as type 2 error, which is letting a guilty person go. Type 1 error is the more important of the two errors, and could be measured over time using exoneration rates. Type 2 error is more difficult to measure, but could potentially be inferred from rates of people who have been found not guilty and proceeded to eventually commit a similar crime.
+Jurors are asked to assume the null hypothesis that a person is innocent until proven guilty. JUSAS will reduce type 1 error, which is convicting an innocent person, as well as type 2 error, which is letting a guilty person go.
+Type 1 error is the more important of the two errors and could be measured over time using exoneration rates.
+Type 2 error is more difficult to measure, but could potentially be estimated from the rates of people who have been found not guilty and proceeded to eventually commit a similar crime.
 
-JUSAS will receive a lot of scrutiny. The main issue may be that the tool itself will also have biases, because the algorithms will be developed by humans who could transfer some of their own biases. The algorithms also have the potential to develop their own biases as they continue to learn. However, I believe the tool will do a better job at selecting jurors, because it will be developed with all of this in mind. In the heat of the moment, judges, lawyers, and jurors may not be aware of their own biases. Lawyers even try to use biases to their advantage, often attempting to select jurors that will favor their side of the case. JUSAS will control for these factors in a way that will lead to less biased juries and more just verdicts.
+JUSAS will receive a lot of scrutiny. We expect the main issue to be that the tool itself will also have biases because the algorithms will be developed by humans who could transfer some of their own biases.
+The algorithms also have the potential to develop their own biases as they continue to learn.
+However, I believe the tool will do a better job at selecting jurors, because it will be developed with all of this in mind. In the heat of the moment, judges, lawyers, and jurors may not be aware of their own biases. Lawyers even try to use biases to their advantage, often attempting to select jurors that will favor their side of the case. JUSAS will control for these factors in a way that will lead to less biased juries and more just verdicts.
 
 ## Citations
 
